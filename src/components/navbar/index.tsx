@@ -10,7 +10,7 @@ export function Navbar() {
     <nav className='navbar'>
       <Link to="/" className="name-logo">
         <YoutubeLogo size={34} />
-        <p className='name'>Frameworks 2 Flix</p>
+        <p className='name'>Frameworks 2 Flix <sup>©</sup></p>
       </Link>
       <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
         <List size={32} weight="bold" className="icon-menu"/>

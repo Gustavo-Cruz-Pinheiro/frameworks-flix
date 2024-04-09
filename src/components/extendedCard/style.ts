@@ -3,8 +3,9 @@ import styled from "styled-components";
 const CardContainer = styled.div`
     width: 65%;
     padding: 2rem;
-    border: 2px solid gray;
-    border-radius: 2rem;
+    border-top: 7px solid #007732;
+    border-radius: 5%;
+    background-color: #fff;
 
     @media screen and (max-width: 900px){
         margin: 2rem;

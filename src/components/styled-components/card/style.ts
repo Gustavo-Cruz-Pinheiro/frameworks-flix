@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 const CardContainer = styled.div`
-    width: 20rem;
+    min-width: 400px;
     margin: 4rem;
     margin-top: -20px;
-    border: 2px solid gray;
+    border-top: 7px solid #007732;
     border-radius: 5%;
+    background-color: #fff;
 
     @media screen and (max-width: 900px){
         margin: 2rem;
