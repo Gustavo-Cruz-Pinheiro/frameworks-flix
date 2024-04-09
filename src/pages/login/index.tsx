@@ -30,30 +30,32 @@ export function Login() {
     }
 
     return (
-        <div className="form-container">
-            <form onSubmit={handleSubmit} className="form">
-                <h1 className="title">Login</h1>
+        <div className="bg">
+            <div className="form-container">
+                <form onSubmit={handleSubmit} className="form">
+                    <h1 className="title">Login</h1>
 
-                <Input
-                    placeholder="joãodasilva@gmail.com"
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    className="input"
-                />
+                    <Input
+                        placeholder="joãodasilva@gmail.com"
+                        type="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        className="input"
+                    />
 
-                <Input
-                    placeholder="********"
-                    type="password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    className="input"
-                />
+                    <Input
+                        placeholder="********"
+                        type="password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        className="input"
+                    />
 
-                <div className="center">
-                    <button type="submit" className="button">Entrar</button>
-                </div>
-            </form>
+                    <div className="center">
+                        <button type="submit" className="button">Entrar</button>
+                    </div>
+                </form>
+            </div>
         </div>
     )
 }

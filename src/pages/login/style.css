@@ -1,8 +1,11 @@
-body {
+/* .bg {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
     background-image: url("../../assets/image/login-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 .form-container {
     display: flex;
