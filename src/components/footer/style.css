@@ -1,0 +1,24 @@
+.footer {
+    background-color: #000000;
+    padding: 0 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    display: flex;
+}
+
+.information {
+    color: #FFFFFF;
+    padding: 0.5rem;
+}
+
+.social-network {
+    cursor: pointer;
+    margin: 0 0.5rem;
+    color: #F6ECE2;
+}
+
+.social-network:hover {
+    color: #203936;
+}
