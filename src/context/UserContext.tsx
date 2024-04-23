@@ -26,6 +26,8 @@ export function UserProvider({ children }: UserProviderProps) {
             'nome': nome
         })
         setNome(nome);
+
+        alert("Nome de usuário alterado com sucesso!")
     }
 
     function logar(nome: string, email: string) {

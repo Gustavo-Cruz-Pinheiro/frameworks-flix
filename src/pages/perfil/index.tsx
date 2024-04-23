@@ -2,11 +2,14 @@ import { FormEvent, useContext, useState } from "react";
 import { Input } from "../../components/input";
 import "./style.css";
 import { UserContext } from "../../context/UserContext";
+import { useNavigate } from "react-router-dom";
 
 export function Perfil() {
     const { atualizarUsuario, nome } = useContext(UserContext);
 
-    const [name, setName] = useState(nome)
+    const [name, setName] = useState(nome);
+
+    const navigate = useNavigate();
 
     function handleSubmit(e: FormEvent) {
         e.preventDefault()
@@ -17,6 +20,8 @@ export function Perfil() {
         }
 
         atualizarUsuario(name);
+
+        navigate("/", { replace: true })
     }
 
     return (
