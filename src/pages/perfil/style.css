@@ -22,10 +22,10 @@
     background-color: #fff;
 }
 
-.title {
+.titulo-perfil {
+    font-size: 30px;
     display: flex;
     justify-content: center;
-    font-size: 40PX;
 }
 
 .center {

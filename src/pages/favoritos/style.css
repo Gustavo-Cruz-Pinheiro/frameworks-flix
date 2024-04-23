@@ -6,6 +6,11 @@
     color: #203936;
 }
 
+.msg {
+    font-size: 30pt;
+    margin-bottom: 200px;
+}
+
 .card-list {
     display: flex;
     justify-content: center;

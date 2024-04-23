@@ -1,11 +1,16 @@
-import { FormEvent, useState } from "react";
+import { FormEvent, useContext, useState } from "react";
 import { Input } from "../../components/input";
 import { auth } from "../../services/firebaseConnection";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import "../login/style.css";
+import { UserContext } from "../../context/UserContext";
+import { collection, getDocs, query } from "firebase/firestore";
+import { db } from "../../services/firebaseConnection";
 
 export function Login() {
+    const { logar } = useContext(UserContext);
+
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const navigate = useNavigate()
@@ -19,12 +24,26 @@ export function Login() {
         }
 
         signInWithEmailAndPassword(auth, email, password)
-            .then(() => {
+            .then(async () => {
                 console.log('Autenticação realizada com sucesso!');
+
+                const userCollection = collection(db, 'user');
+                const queryRef = query(userCollection);
+
+                const snapshot = await getDocs(queryRef);
+
+                let nome = "";
+
+                snapshot.forEach((doc) => {
+                    nome = doc.data().nome;
+                })
+
+                logar(nome, email);
+
                 navigate('/', { replace: true })
             })
             .catch((error) => {
-                alert('Erro ao realizar autenticação!');
+                alert('Erro ao realizar autenticação! Por favor verifiques o e-mail e senha informados!');
                 console.log(error);
             })
     }

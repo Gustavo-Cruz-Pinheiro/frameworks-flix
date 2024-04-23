@@ -10,7 +10,7 @@ export function Navbar() {
     <nav className='navbar'>
       <Link to="/" className="name-logo">
         <YoutubeLogo size={34} />
-        <p className='name'>Frameworks 2 Flix <sup>©</sup></p>
+        <p className='name'>Frameworks 2 Flix<sup>™</sup></p>
       </Link>
       <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
         <List size={32} weight="bold" className="icon-menu"/>
@@ -23,7 +23,13 @@ export function Navbar() {
           <Link to={'/favoritos'} className='link'>Favoritos</Link>
         </li>
         <li>
+          <Link to={'/carrinho'} className='link'>Carrinho</Link>
+        </li>
+        <li>
           <Link to={'/login'} className='link'>Login</Link>
+        </li>
+        <li>
+          <Link to={'/perfil'} className='link'>Perfil</Link>
         </li>
       </ul>
     </nav>

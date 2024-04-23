@@ -7,12 +7,12 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCgvQK12yRUFpTPpzUdnnN8FD61EjBA_QE",
-  authDomain: "react-routes-8daff.firebaseapp.com",
-  projectId: "react-routes-8daff",
-  storageBucket: "react-routes-8daff.appspot.com",
-  messagingSenderId: "706367460192",
-  appId: "1:706367460192:web:07d241900d2a81b1610405"
+  apiKey: "AIzaSyBbksZDeBYs-_6_tO8yP2k9p2m-HwJRJ-0",
+  authDomain: "atividade-frameworks-2.firebaseapp.com",
+  projectId: "atividade-frameworks-2",
+  storageBucket: "atividade-frameworks-2.appspot.com",
+  messagingSenderId: "839455416446",
+  appId: "1:839455416446:web:cbd71d769682239d0bf82f"
 };
 
 // Initialize Firebase

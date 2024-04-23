@@ -32,8 +32,8 @@ export function Produto() {
                 overview={product?.overview}
                 release_date={product?.release_date}
                 vote_average={product?.vote_average}
-                media_type={product?.media_type}
                 poster_path={product?.poster_path}
+                popularity={product?.popularity}
             />
         </div>
     )

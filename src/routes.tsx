@@ -6,6 +6,8 @@ import { Favoritos } from "./pages/favoritos";
 import { Login } from "./pages/login";
 import { Notfound } from "./pages/notfound";
 import { Private } from "./routes/private";
+import { Perfil } from "./pages/perfil";
+import { Cart } from "./pages/cart";
 
 const router = createBrowserRouter([
     {
@@ -21,11 +23,19 @@ const router = createBrowserRouter([
             },
             {
                 path: '/favoritos',
-                element: <Favoritos />,
+                element: <Private> <Favoritos /> </Private>,
             },
             {
                 path: '/login',
                 element: <Login />,
+            },
+            {
+                path: '/perfil',
+                element: <Private> <Perfil /> </Private>,
+            },
+            {
+                path: '/carrinho',
+                element: <Private> <Cart /> </Private>,
             },
             {
                 path: '*',

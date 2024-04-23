@@ -41,6 +41,7 @@ export function Private({ children }: PrivateProps) {
             <div className="loading">
                 <Spinner size={100} weight="bold" className="icon-loading"/>
                 <p className="text-loading">Carregando...</p>
+                <p className="text-instruction">Por favor, realize o login!</p>
             </div>
         )
     }
