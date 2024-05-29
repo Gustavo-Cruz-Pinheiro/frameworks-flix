@@ -4,7 +4,7 @@ interface CartProviderProps {
     children: ReactNode;
 }
 
-interface CartContextData {
+export interface CartContextData {
     produtos: number[];
     adicionarProduto: (id: number) => void;
     removerProduto: (id: number) => void;

@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import Card from "../../components/card/card";
-import './style.css';
 import { Tittle } from "../../components/tittle";
 
 export interface ProductProps {
@@ -15,6 +14,13 @@ export interface ProductProps {
 
 export function Home() {
     const [products, setProducts] = useState<ProductProps[]>([])
+
+    const style = {
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        // flexWrap: "wrap"
+    }
 
     useEffect(() => {
         function getProducts() {
@@ -33,7 +39,7 @@ export function Home() {
     return (
         <>
             <Tittle titulo={"Filmes em destaque"}/>
-            <div className='card-list'>
+            <div className='card-list' style={style}>
                 {
                     products.map((item, index) => (
                         <Card

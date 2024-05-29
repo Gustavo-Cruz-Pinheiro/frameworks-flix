@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { CartContext } from "../../context/CartContext";
 import { useContext } from "react";
 import Card from "../../components/card/card";
-import "./style.css";
 import { Tittle } from "../../components/tittle";
 import { useNavigate } from "react-router-dom";
 
@@ -30,7 +29,7 @@ export function Cart() {
     function handleDeleteAll() {
         removerTodos();
 
-        navigate("/", { replace: true })
+        navigate("/", { replace: true });
     }
 
     useEffect(() => {
@@ -104,7 +103,7 @@ export function Cart() {
 
             <div className="center">
                 <div className="preco">
-                    Preço Total: R${precoTotal.toFixed(2)}
+                    Preço Total: R${precoTotal.toFixed(2)} | 
                 </div>
                 <div>
                     Quantidade de Filmes: {qtdTotal}
