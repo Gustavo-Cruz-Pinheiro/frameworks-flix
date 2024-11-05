@@ -2,7 +2,7 @@
 
 ![Status](http://img.shields.io/static/v1?label=Status&message=Finalizado&color=GREEN&style=for-the-badge)
 
-O objetivo do projeto foi desenvolver um site para visualização de filmes lançamentos e poder os adicionar a uma lista de favoritos.
+O objetivo do projeto foi desenvolver um site para visualização de filmes lançamentos e poder adiciona-los a uma lista de favoritos.
 
 ![Demonstração da Aplicação](./src/assets/image/demo.png)
 
